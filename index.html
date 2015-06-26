@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hackday is coming!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
+  <script type='text/javascript' src='js/jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/demo.js'></script>
+  <script type="text/javascript" src="js/jquery.countdown.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('.countdown').countdown({
+        date: "July 25, 2015 00:00:00",
+        render: function(data) {
+            $(this.el).html(this.leadingZeros(data.days, 2) + " days &nbsp; <span>" + this.leadingZeros(data.hours, 2) + ":" + this.leadingZeros(data.min, 2) + ":<span>" + this.leadingZeros(data.sec, 2) + "</span></span>");
+          }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="particles">
+    <div id="intro">
+      <h1 class="countdown">31 days &nbsp; <span>23:45:04</span></h1>
+      <!-- <p>Hack Day is coming!</p> -->
+      <object id="hackday" type="image/svg+xml" data="css/hackday.svg">Hack Day</object>
+      <div class="yourCountdownContainer"></div>
+    </div>
+  </div>
+</body>
+</html>
