@@ -91,22 +91,8 @@ h1 {
   letter-spacing: 0.015em;
   margin-bottom: 1em;
 }
-h1 span {
-  font-weight: 400;
-  /*font-family: 'Helvetica Neue', 'Helvetica', sans-serif;*/
-  /*font-family: 'Roboto Mono';*/
-}
+h1 span { font-weight: 400; }
 h1 span span { width: 6%; display: inline-block; }
-/*h1::after {
-  content: '';
-  width: 8px;
-  display: block;
-  background: #fff;
-  height: 8px;
-  margin: 30px auto;
-  line-height: 1.1;
-  border-radius: 80px;
-}*/
 p {
   margin: 0 0 30px 0;
   font-size: 24px;
